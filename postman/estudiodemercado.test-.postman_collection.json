@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "77fa1277-1735-4e73-ba44-d0a731b20225",
+		"name": "estudiodemercado.test/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marco@mail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "caceres123",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://estudiodemercado.test/api/login",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTA1NzEzZjMxODcwZjNkOWM1NjBhODEzNTAyNmYwYzFmMjIxM2IxMWU4MzRhZjY2NWRmN2VjN2Q2NWFkYTAyZTU4NGZlYjdhNTVmYmJmMmUiLCJpYXQiOjE2NzA3MDc1NjYuNTU1NTI4LCJuYmYiOjE2NzA3MDc1NjYuNTU1NTMxLCJleHAiOjE3MDIyNDM1NjYuNDQwODE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.EWQByqJe6oWotNigMCaxlD3FlJlhXxM7lqPVmuSGPaf926_pMVic6fYxpFmIy2KKYX2i_p0-V9wYvSn9GJg8HYpCHEexOUQE02S7o7hcAWf87YXGPqUDRwkI3EUGp7opL6gNxqCbJ_Ppe6ItEuJ0x-o0eW1qq4AvHDL1wSyObWyJOS5yM4YbbUtKtpWRObIBs8QDf3EEpufUb0w_Ty8dr5IoAsl0MzgO9uD8j8Amo9bEfs_ioYNM9fPUfIWp7Uc8JrOFx3ycBKbFCBQ9y6Nv-s1jNBoJrD6izVd2c8OhvNK_lKzBmloF25XgUjxNcNP8x0l6nnka0wsJKRmX0NFwMVSTZOe95EuxqnfmZbpCbsMS9_1WpKM4rz0FNUoaoV-qlrCnDTX27SLy0WJigeOvMPO1CsngN3Fc8Km3IODWe_mA7RmvVcazms2rJTYDZGdQI8ns-nYqf7F3dafW8kZhRANUg4s-Zs5JMMS-M0_ncj3uZ8Je1nc8UhwszbhDfg-EFQPzxZW9s72drz90CwkTndJd3hLkDMHLinssb0BJ4c0GiH1vJg19FJLsDAUM2Gj_G_SUiPpVUhDDN44ky-VZeQMDBt-cBnV7uFSntoEE_n5GhInFsLUoPGTaDeZnHcGQhLP3RWwjOesMl5mCnK6jXRXTfTk0RxeomXzypLFB1tI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://estudiodemercado.test/api/estudios",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"estudios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTA1NzEzZjMxODcwZjNkOWM1NjBhODEzNTAyNmYwYzFmMjIxM2IxMWU4MzRhZjY2NWRmN2VjN2Q2NWFkYTAyZTU4NGZlYjdhNTVmYmJmMmUiLCJpYXQiOjE2NzA3MDc1NjYuNTU1NTI4LCJuYmYiOjE2NzA3MDc1NjYuNTU1NTMxLCJleHAiOjE3MDIyNDM1NjYuNDQwODE5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.EWQByqJe6oWotNigMCaxlD3FlJlhXxM7lqPVmuSGPaf926_pMVic6fYxpFmIy2KKYX2i_p0-V9wYvSn9GJg8HYpCHEexOUQE02S7o7hcAWf87YXGPqUDRwkI3EUGp7opL6gNxqCbJ_Ppe6ItEuJ0x-o0eW1qq4AvHDL1wSyObWyJOS5yM4YbbUtKtpWRObIBs8QDf3EEpufUb0w_Ty8dr5IoAsl0MzgO9uD8j8Amo9bEfs_ioYNM9fPUfIWp7Uc8JrOFx3ycBKbFCBQ9y6Nv-s1jNBoJrD6izVd2c8OhvNK_lKzBmloF25XgUjxNcNP8x0l6nnka0wsJKRmX0NFwMVSTZOe95EuxqnfmZbpCbsMS9_1WpKM4rz0FNUoaoV-qlrCnDTX27SLy0WJigeOvMPO1CsngN3Fc8Km3IODWe_mA7RmvVcazms2rJTYDZGdQI8ns-nYqf7F3dafW8kZhRANUg4s-Zs5JMMS-M0_ncj3uZ8Je1nc8UhwszbhDfg-EFQPzxZW9s72drz90CwkTndJd3hLkDMHLinssb0BJ4c0GiH1vJg19FJLsDAUM2Gj_G_SUiPpVUhDDN44ky-VZeQMDBt-cBnV7uFSntoEE_n5GhInFsLUoPGTaDeZnHcGQhLP3RWwjOesMl5mCnK6jXRXTfTk0RxeomXzypLFB1tI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Estudio de mercado TRES",
+							"type": "default"
+						},
+						{
+							"key": "objetivo",
+							"value": "tercer objetivo",
+							"type": "default"
+						},
+						{
+							"key": "objetivos_especificos",
+							"value": "Objetivos especificos del tercer estudio de mercado",
+							"type": "default"
+						},
+						{
+							"key": "especificacion",
+							"value": "Especificacion del tercer estudio de mercado",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://estudiodemercado.test/api/estudios",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"estudios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTM5NDRmNTQxMDcyNzBlNGQzMWNjYzA0ZTc2MzMyNmQwZWJhY2ZiMDk3ZGE1NGQ5NGI5MGY2NTg4ZGMxZjc0Nzc3ZGQwMzc3MjUyZDhiMjkiLCJpYXQiOjE2NzA3MTEyNDIuNTM2OTE1LCJuYmYiOjE2NzA3MTEyNDIuNTM2OTE5LCJleHAiOjE3MDIyNDcyNDIuNDI1NTc4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Jni3kaSfoUL-HVnkn9250lKZIxaxb-C5yvZh6UiuzLC58bUmfRTc7UXo6vvTapGFt9cfu3PTVRZTT9WkgDmb-gsexECE4ABlEWey-u0nkgEZlRsZHXItHkLp8_bb-AurtqSIUdbM4rQZd49eA_Ka0-Ut8kFPFDtPlyeZwaNHi1AuC3d035JA4LecH4igmcBu6A-K0LIk5h5SAwlqlHxAZi2Swz4BLFisUhAJveJFa1A7fFrATCKE2-lsC69SbDZbs9JyY1N1HRR4p2p7FSE8jAAdvj80npT--3uXZXGVFBXs_guSqTb91fHIrGxvoFdPm6Ge3RJp8uJs2jPFg7OtWzAR52mBrDoDqnLNLxXxvpaAN_rD3IcS8FPXAI_ANhtS9NQKkt6PLbSMP7NUpXm2yRL_ijdkS0aj23i_KO_UewVRd74c0YgF2l9pqq8B_DWSU9vhBFcB1PzbD6G9v2o3inJw6IXdYyK4H39as_IA-xjlkHKPZgMxOSVk-nwcpuA2RSxmlx-1o_JPtmTGtYoXWSY8XFriXi_QAYtpdeBNTdCMyK3lS6kNMMe8JRestNFleBv6YR89FH0XWpy0NPBeE4WhQ3KrAazXfYP_ke32eWU7G9DcnaWnod4iK9Hce4cIMkE2WsnI5CRIt1tQJs0juAeg3-kBP671Md-tnQvQ_0M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://estudiodemercado.test/api/estudios/2",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"estudios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2E0YjY0MDI0NDdjZTQ0NzBmNWU4MTQxZmM1ZWM4OGE0M2UyZTE1NjM1NDMwMWRlMTM1YTRiMTFiNGY5NmJhNjEzYzg0MmIyYmQzNjA5MTgiLCJpYXQiOjE2NzA3MTE0NjcuMzMyMjAxLCJuYmYiOjE2NzA3MTE0NjcuMzMyMjAzLCJleHAiOjE3MDIyNDc0NjcuMDU5NDU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uygmmKxhLueoyEbn5_R1Kb-CHeqD5JqKSldLi6u-Q5Bus_38C6fbcrxwPZsaLuG5j7DIeYRW6Wi0PcAWC_SrmepCIniID4BIMgvKzm6P0X4_Q4yUOkz6Cs3iUU6_ggZQTGZ8blmvGnia3QBRe4mV5P19ECZzWyAc0P7R6lDG58s0_HsVPGgpIAt8CcA2EmFqsYMZjFCVbJR0V5v27Yb37J7BUqYOM94VfsmpMD7RfUvfW4HGAdJqOlAulk1Gh-IvDe38Bp2LbxAAInfil67mM-axfsRHWXB_Aufos28q7gnwBQv9gRi5F9HJ1d9KbXEEqNtH-XBKldc2sfQTUbQBCEJSVU1_zMUajYHxfznbQl7-kU6K65hYla_7Bj5PHZRTF7CQuN46cDKo05ybaqLk6txOpisQbePhK1gJ4RsLbH_UH9tqGOXUW1-8_fSCSRwImkqZQIi6LYsc0KYs2p7DTHlnM1t7szi8b57ID7-cr-GjWC-NDCZV2VonT8zCE_zhek4EhJLeNAITrZAitSuYpTb5i5qQJNPnsEM-XlDGwjxbGjfCqGskg_C4mVS6WjCdKTyslc150wIXnS2ccqYISihTOJ-_KlyZ-5yMj6kZ0umyAaSZtITaKJbWS6BWILtTIBjPzgPLeekz8set7Ye4AR0kMbUkhGdJd26M89Idu00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Segundo estudio de mercado\",\n    \"objetivo\": \"2do objetivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://estudiodemercado.test/api/estudios/2",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"estudios",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2E0YjY0MDI0NDdjZTQ0NzBmNWU4MTQxZmM1ZWM4OGE0M2UyZTE1NjM1NDMwMWRlMTM1YTRiMTFiNGY5NmJhNjEzYzg0MmIyYmQzNjA5MTgiLCJpYXQiOjE2NzA3MTE0NjcuMzMyMjAxLCJuYmYiOjE2NzA3MTE0NjcuMzMyMjAzLCJleHAiOjE3MDIyNDc0NjcuMDU5NDU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uygmmKxhLueoyEbn5_R1Kb-CHeqD5JqKSldLi6u-Q5Bus_38C6fbcrxwPZsaLuG5j7DIeYRW6Wi0PcAWC_SrmepCIniID4BIMgvKzm6P0X4_Q4yUOkz6Cs3iUU6_ggZQTGZ8blmvGnia3QBRe4mV5P19ECZzWyAc0P7R6lDG58s0_HsVPGgpIAt8CcA2EmFqsYMZjFCVbJR0V5v27Yb37J7BUqYOM94VfsmpMD7RfUvfW4HGAdJqOlAulk1Gh-IvDe38Bp2LbxAAInfil67mM-axfsRHWXB_Aufos28q7gnwBQv9gRi5F9HJ1d9KbXEEqNtH-XBKldc2sfQTUbQBCEJSVU1_zMUajYHxfznbQl7-kU6K65hYla_7Bj5PHZRTF7CQuN46cDKo05ybaqLk6txOpisQbePhK1gJ4RsLbH_UH9tqGOXUW1-8_fSCSRwImkqZQIi6LYsc0KYs2p7DTHlnM1t7szi8b57ID7-cr-GjWC-NDCZV2VonT8zCE_zhek4EhJLeNAITrZAitSuYpTb5i5qQJNPnsEM-XlDGwjxbGjfCqGskg_C4mVS6WjCdKTyslc150wIXnS2ccqYISihTOJ-_KlyZ-5yMj6kZ0umyAaSZtITaKJbWS6BWILtTIBjPzgPLeekz8set7Ye4AR0kMbUkhGdJd26M89Idu00",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://estudiodemercado.test/api/estudios/3",
+					"protocol": "http",
+					"host": [
+						"estudiodemercado",
+						"test"
+					],
+					"path": [
+						"api",
+						"estudios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
